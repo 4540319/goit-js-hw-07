@@ -1,3 +1,6 @@
+//прибираємо зайвий лічильник
+const hidCounter = document.querySelector('#counter');
+hidCounter.hidden = true;
 //створюємо поле інпут і кнопки
 const controls = document.createElement('div');
 controls.id = 'controls';
