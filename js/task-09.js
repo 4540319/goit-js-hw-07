@@ -8,8 +8,10 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-function changeColor() {bodyRef.style = `background-color:${getRandomHexColor()}`;
-spanRef.textContent = `${getRandomHexColor()}`;
+function changeColor() {
+  const color = getRandomHexColor();
+  bodyRef.style = `background-color:${color}`;
+  spanRef.textContent = `${color}`;
 }
 
 buttonRef.addEventListener('click', changeColor);
